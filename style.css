@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#top{
+    height: 60%;
+    min-height: 60vh;
+    background-image: url(https://images.unsplash.com/photo-1432839318976-b5c5785ce43f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+#overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.299);
+}
+
+#text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vw;
+    bottom: 20%;
+    color: white;
+}
+
+#text h1{
+    font-size: 6vw;
+    font-weight: 500;
+}
+
+#textright{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#textright p{
+    font-size: 12px;
+    width: 40%;
+    font-weight: 400;
+}
+
+#bottom{
+    display: flex;
+    min-height: 40vh;
+    width: 100%;
+    background-color: royalblue;
+}
+
+#bone{
+    min-height: inherit;
+    width: 25%;
+    background-color: rgb(255, 255, 255);
+}
+
+#bone .first{
+    font-size: 2.3vw;
+    font-weight: 500;
+    padding: 5vw 0vw 1vw 3vw;
+    
+}
+
+#bone .second{
+    font-size: 1.2vw;
+    font-weight: 300;
+    padding: 0vw 3vw;
+}
+
+#btwo{
+    min-height: inherit;
+    width: 25%;
+    background-image: url(https://images.unsplash.com/photo-1508171767916-b227c35025e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=386&q=80);
+    background-position: 0% 70%;
+    background-size: cover;
+}
+
+#bthree{
+    min-height: inherit;
+    width: 20%;
+    background-color: pink;
+}
+
+#bthreetop{
+    height: 50%;
+    width: 100%;
+    background-color: orangered;
+    color: rgb(255, 255, 255);
+}
+
+#bthreetop .firstone{
+    font-size: 1.8vw;
+    font-weight: 500;
+    padding: 2vw 0vw 1vw 2vw;
+    
+}
+
+#bthreetop .secondone{
+    font-size: 1vw;
+    font-weight: 300;
+    padding: 0vw 2vw;
+}
+
+#bthreebottom{
+    height: 50%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1596282342789-dfaca00568b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+#bfour{
+    min-height: inherit;
+    width: 30%;
+    background-color: rgb(17, 17, 17);
+}
+
+#bfour h4{
+    padding: 1vw 3vw;
+    font-size: 2vw;
+    font-weight: 500;
+    color: white;
+}
+
+#bfour p{
+    padding: 0 11px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#profileone{
+    padding: 0.5vw 3vw;
+    display: flex;
+    color: white;
+}
+
+#profiletwo{
+    padding: 0.5vw 3vw;
+    display: flex;
+    color: white;
+}
+
+.container1{
+    background-image: url(https://media.istockphoto.com/id/493763323/photo/happy-multiethnic-peoples-headshot.jpg?s=2048x2048&w=is&k=20&c=FbpfTf-lI9pULj9lrx9KmoZqz5XsTjuWvQo3nUO05F4=);
+    height: 42px;
+    width: 54px;
+    border-radius: 50%;
+}
+
+.container2{
+    background-color: red;
+    height: 42px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+@media (max-width: 500px){
+   #overlay #text{
+    flex-direction: column;
+    align-items: flex-start;
+   }
+   #overlay #text #textright{
+    flex-direction: column;
+    align-items: flex-start;
+   }
+   #overlay #text #textright p{
+    font-size: 2vw;
+    width: initial;
+    margin-top: 20px;
+   }
+   #overlay #text #textright #icon{
+    margin-top: 24px;
+   }
+   #overlay #text h1{
+    font-size: 12vw;
+   }
+   #bottom{
+    flex-direction: column;
+   }
+   #bone{
+    width: 100%;
+   }
+   #btwo{
+    width: 100%;
+   }
+   #bthree{
+    width: 100%;
+   }
+   #bfour{
+    width: 100%;
+   }
+   #bone{
+    min-height: 9vh;
+    padding: 1vw 2vw;
+   }
+   #btwo{
+    min-height: 38vh;
+   }
+   #bthree{
+    min-height: 23vh;
+   }
+   #bfour{
+    min-height: 9vh;
+    padding: 0 2vw;
+   }
+   #bfour h4{
+    font-size: 4vw;
+   }
+   .container1{
+    height: 20px;
+    width: 24px;
+   }
+   #bfour p{
+    font-size: 10px;
+   }
+   .container2{
+    height: 21px;
+    width: 25px;
+   }
+   #bone .first{
+    font-size: 5vw;
+   }
+   #bone .second{
+    font-size: 1.5vw;
+   }
+   #bthreetop .firstone{
+    font-size: 6vw;
+   }
+   #bthreetop .secondone{
+    font-size: 1vw;
+   }
+   #bthreebottom{
+    height: 30vh;
+   }
+   #bthreetop{
+    height: 7vh;
+   }
+
+}
+
+@media (max-width: 950px){
+    .container1{
+        height: 29px;
+        width: 54px;
+    }
+    .container2{
+        height: 29px;
+        width: 52px;
+    }
+}
